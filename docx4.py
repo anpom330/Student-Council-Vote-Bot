@@ -508,7 +508,7 @@ def create_hse_docx(year, month, day, date, total_weight, present_weight, number
     p = doc.add_paragraph()
     p.paragraph_format.left_indent = Cm(0.26)
 
-    row_data = ["Председательствующая", "__________________________", "Самарина С.М."]
+    row_data = ["Председательствующий", "__________________________", "Фамилия И.О."]
     table = doc.add_table(rows=1, cols=3)
     row = table.rows[0].cells
     for i, cell_text in enumerate(row_data):
@@ -530,7 +530,7 @@ def create_hse_docx(year, month, day, date, total_weight, present_weight, number
     p = document.add_paragraph()
     p.paragraph_format.left_indent = Cm(0.26)
 
-    row_data = ["Секретарь", "__________________________", "Баланов А.С."]
+    row_data = ["Секретарь", "__________________________", "Фамилия И.О."]
     table = doc.add_table(rows=1, cols=3)
     row = table.rows[0].cells
     for i, cell_text in enumerate(row_data):
